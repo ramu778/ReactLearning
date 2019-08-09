@@ -1,0 +1,11 @@
+.assign1{
+    width: 80%;
+    border: 1px solid #000000;
+    box-shadow: 2px 3px #ffffff;
+    margin:auto;
+    padding: 20px;
+    text-align: center;
+}
+.body{
+    margin: auto;
+}
