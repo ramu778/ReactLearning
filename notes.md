@@ -9,4 +9,6 @@ https://stackoverflow.com/questions/49082148/what-scope-related-problems-javascr
 ## we can access children elements of the JSX element using the special property called 'childern' ex: props.children'
 ## state property can be only used inside a component that extends from react Component. But in the latest versions of react 16.8 or so, we can even use this property in normal components also
 ## Till 16.8, the only way to modify the state is in class component using "setState" method. But in 16.8 on wards, the state can also be changed from the functional components using the react hooks called "useState"
+## We should always update the state in immutable fashion
+## It is always good practice and performant to have "key" property for all the collections. React makes the update faster by monitoring which element actually has modified and only changes that using the key attribute in the component
 
