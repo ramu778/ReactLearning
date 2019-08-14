@@ -17,7 +17,7 @@ class Assign2App extends Component{
         });
     }
 
-    removeThisCharacter = (event, charIndex) => {
+    removeThisCharacter = (charIndex) => {
         let localArray1 = this.state.enteredString.split('');
         localArray1.splice(charIndex,1);
         let splicedString= localArray1.join('');
@@ -35,7 +35,7 @@ class Assign2App extends Component{
                 {localString.map((char,charIndex) => {
                     return <CharComponent 
                     char = {char}
-                    removeThisChar = {(event) => this.removeThisCharacter(event, charIndex)}
+                    removeThisChar = {() => this.removeThisCharacter(charIndex)}
                     />
                 })}
             </div>
